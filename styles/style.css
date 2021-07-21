@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgb(182, 182, 182);
+}
+
+.text {
+  margin: 0;
+}
