@@ -32,6 +32,16 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  padding-top: 86px;
+  margin-bottom: 95px;
+}
+
+.page-nav {
+  width: 570px;
+  margin: 0 auto;
+}
+
 .nav-list,
 .post-list {
   margin-top: 0;
@@ -43,8 +53,13 @@ body {
 
 .nav-list-item {
   display: inline-block;
+  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 14px;
   line-height: 24px;
+}
+
+.nav-list-item:not(:last-of-type) {
+  margin-right: 105px;
 }
 
 .nav-link {
@@ -53,35 +68,77 @@ body {
   color: #626262;
 }
 
+.nav-link:focus,
+.nav-link:hover {
+  color: #03a9f4;
+}
+
+.main-content {
+  padding-bottom: 80px;
+}
+
+.post-list {
+  margin-bottom: 84px;
+}
+
 .post-list-item {
   display: inline-block;
   width: 421px;
 }
 
-.post-tag,
-.post-text,
+.post-list-item:not(:nth-of-type(2n)) {
+  margin-right: calc(900px - (421px * 2));
+}
+
+.post-list-item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 129px;
+}
+
+.post-image {
+  margin-bottom: 26px;
+}
+
+.post-tag {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .post-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.post-text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .post-tag {
+  font-family: 'Ubuntu Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: #b4ad9e;
 }
 
 .post-title {
+  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 30px;
   line-height: 45px;
+  font-weight: 200;
+  color: #626262;
 }
 
 .post-text {
+  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 14px;
   line-height: 24px;
 }
 
 .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: transparent;
   outline: none;
   border: 1pt solid #626262;
@@ -89,4 +146,16 @@ body {
   padding-bottom: 22px;
   padding-left: 34px;
   padding-right: 34px;
+  font-family: 'Playfair Display', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #626262;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #03a9f4;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(.20, .96, .74, .07);
+  transition-delay: 0;
 }
