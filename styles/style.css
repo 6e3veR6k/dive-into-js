@@ -1,5 +1,32 @@
-.container {
-  margin: 0 auto;
-  max-width: 800px;
-  background-color: rgb(182, 182, 182);
+/* ***************************************************************** */
+/* Common */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* ***************************************************************** */
+/* Style */
+
+body {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.header {
+
 }
