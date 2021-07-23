@@ -1,0 +1,10 @@
+:root {
+  --main-font-family:  'Red Hat Display Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --accent-font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --color-black: #25202fff;
+  --color-black2: #000000ff;
+  --color-white: #ffffffff;
+  --color-gray: #7E7F86ff;
+  --color-gray2: #636066ff;
+  --accent-color: #8643DCff;
+}
